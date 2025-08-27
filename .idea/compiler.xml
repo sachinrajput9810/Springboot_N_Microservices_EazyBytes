@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Loans" />
       </profile>
       <profile name="Annotation profile for RestApi" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -15,15 +14,30 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
         </processorPath>
         <module name="RestAPI" />
       </profile>
+      <profile name="Annotation profile for cards" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="Cards" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Loans" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Cards" options="-parameters" />
       <module name="Loans" options="-parameters" />
       <module name="RestAPI" options="-parameters" />
+      <module name="account-service" options="-parameters" />
     </option>
   </component>
 </project>
