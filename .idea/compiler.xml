@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Loans-service" />
       </profile>
       <profile name="Annotation profile for RestApi" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -14,9 +15,8 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
         </processorPath>
-        <module name="RestAPI" />
+        <module name="accounts" />
       </profile>
       <profile name="Annotation profile for cards" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -25,19 +25,23 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
-        <module name="Cards" />
+        <module name="cards" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Accounts" target="21" />
+      <module name="Cards" target="17" />
       <module name="Loans" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Accounts" options="-parameters" />
       <module name="Cards" options="-parameters" />
       <module name="Loans" options="-parameters" />
-      <module name="RestAPI" options="-parameters" />
-      <module name="account-service" options="-parameters" />
+      <module name="Loans-service" options="-parameters" />
+      <module name="accounts" options="-parameters" />
+      <module name="cards" options="-parameters" />
     </option>
   </component>
 </project>

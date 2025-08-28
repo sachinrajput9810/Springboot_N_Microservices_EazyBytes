@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/Cards/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Loans/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/RestApi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Section2/Loans/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Section2/accounts/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Section2/cards/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/accounts/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cards/src/main/java" charset="UTF-8" />
   </component>
 </project>

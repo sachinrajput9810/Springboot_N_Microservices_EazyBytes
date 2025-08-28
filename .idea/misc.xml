@@ -7,6 +7,10 @@
         <option value="$PROJECT_DIR$/RestAPI/pom.xml" />
         <option value="$PROJECT_DIR$/Loans/pom.xml" />
         <option value="$PROJECT_DIR$/Cards/pom.xml" />
+        <option value="$PROJECT_DIR$/Accounts/pom.xml" />
+        <option value="$PROJECT_DIR$/Section2/accounts/pom.xml" />
+        <option value="$PROJECT_DIR$/Section2/cards/pom.xml" />
+        <option value="$PROJECT_DIR$/Section2/Loans/pom.xml" />
       </list>
     </option>
   </component>
