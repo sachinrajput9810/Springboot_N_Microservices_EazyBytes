@@ -8,15 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Loans-service" />
-      </profile>
-      <profile name="Annotation profile for RestApi" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
-        </processorPath>
-        <module name="accounts" />
+        <module name="Loans-service (1)" />
       </profile>
       <profile name="Annotation profile for cards" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -26,6 +18,26 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
         <module name="cards" />
+      </profile>
+      <profile name="Annotation profile for Accounts" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="accounts (1)" />
+        <module name="accounts" />
+      </profile>
+      <profile name="Annotation profile for cards (1)" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="cards (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -40,8 +52,11 @@
       <module name="Cards" options="-parameters" />
       <module name="Loans" options="-parameters" />
       <module name="Loans-service" options="-parameters" />
+      <module name="Loans-service (1)" options="-parameters" />
       <module name="accounts" options="-parameters" />
+      <module name="accounts (1)" options="-parameters" />
       <module name="cards" options="-parameters" />
+      <module name="cards (1)" options="-parameters" />
     </option>
   </component>
 </project>
